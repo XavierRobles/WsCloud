@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="CasaSpring"/>
+<aop-project name="EjercicioTipoExamen"/>
+<aop-project name="03SpringBoot"/>
+<aop-project name="03_SpringBoot"/>
+<aop-project name="VideojuegoNivel"/>
+<aop-project name="Ejercicio2"/>
+<aop-project name="01_FundamentosSpring"/>
+<aop-project name="CineRepasoSinHerencias"/>
+<aop-project name="03SpringBootCliente-1"/>
+<aop-project name="03SpringBootCliente"/>
+<aop-project name="02_Fundamentosanotaciones"/>
+<aop-project name="Ejercicio1"/>
+<aop-project name="CineRepaso"/>
+</aop-reference-model>

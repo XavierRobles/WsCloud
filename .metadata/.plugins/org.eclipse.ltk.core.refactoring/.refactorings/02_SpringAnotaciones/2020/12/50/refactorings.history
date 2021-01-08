@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;context.xml&apos; to &apos;03SpringBootCliente-1/src/main/java/Ejercicio2.recursos&apos;&#x0D;&#x0A;- Original project: &apos;02_SpringAnotaciones&apos;&#x0D;&#x0A;- Destination element: &apos;03SpringBootCliente-1/src/main/java/Ejercicio2.recursos&apos;&#x0D;&#x0A;- Original element: &apos;context.xml&apos;" description="Copy file" destination="=03SpringBootCliente-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;Ejercicio2.recursos" element1="src/recursos/context.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1607358065781" units="0" version="1.0"/>
+</session>

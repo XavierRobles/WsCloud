@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="casa.Casa" id="Casa1">
+
+		<property name="direccion" ref="dirrecioncasa1"></property>
+		<property name="propietarios" ref="arrayPropietariosRelleno"></property>
+		<property name="inquilinos" ref="arrayInquilinossRelleno"></property>
+		<property name="habitaciones" ref="arrayCasaRelleno"></property>
+
+	</bean>
+
+	<bean class="casa.Persona" id="propietario1">
+		<property name="nombre" value="Antonio"></property>
+		<property name="telefono" value="652258965"></property>
+		<property name="edad" value="38"></property>
+		<property name="direccion" ref="dirrecion1Antonio"></property>
+
+	</bean>
+	<bean class="casa.Persona" id="inquilino1">
+		<property name="nombre" value="JuanJose"></property>
+		<property name="telefono" value="542586588"></property>
+		<property name="edad" value="35"></property>
+		<property name="direccion" ref="dirrecioncasa1"></property>
+
+	</bean>
+
+
+	<bean class="casa.Direccion" id="dirrecion1Antonio">
+		<property name="tipoVia" value="AV"></property>
+		<property name="calle" value="falsa"></property>
+		<property name="numero" value="10"></property>
+		<property name="cp" value="25843"></property>
+
+	</bean>
+	<bean class="casa.Direccion" id="dirrecioncasa1">
+		<property name="tipoVia" value="AV"></property>
+		<property name="calle" value="verdadera"></property>
+		<property name="numero" value="12"></property>
+		<property name="cp" value="33568"></property>
+
+	</bean>
+
+	<bean class="casa.Habitacion" id="cocina">
+		<property name="tipoHabitacion" value="Cocina"></property>
+		<property name="metros" value="50"></property>
+	</bean>
+
+	<bean class="casa.Habitacion" id="salon">
+		<property name="tipoHabitacion" value="Salon"></property>
+		<property name="metros" value="70"></property>
+	</bean>
+	<bean class="casa.Habitacion" id="dormitorio">
+		<property name="tipoHabitacion" value="Dormitorio"></property>
+		<property name="metros" value="30"></property>
+	</bean>
+
+	<bean id="arrayCasaRelleno" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="salon" />
+				<ref bean="cocina" />
+				<ref bean="dormitorio" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="arrayPropietariosRelleno" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="propietario1" />
+			</list>
+		</constructor-arg>
+	</bean>
+	<bean id="arrayInquilinossRelleno" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="inquilino1" />
+			</list>
+		</constructor-arg>
+	</bean>
+</beans>

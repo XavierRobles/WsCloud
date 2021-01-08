@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean class="cine.entidad.Actor" id="actor1" scope="prototype">
+<constructor-arg index="0" value="2"></constructor-arg>
+<constructor-arg index="1" value="Banderas"></constructor-arg>
+<constructor-arg index="2" value="42"></constructor-arg>
+</bean>
+
+<bean class="cine.entidad.Director" id="director1" scope="prototype">
+<constructor-arg index="0" value="2"></constructor-arg>
+<constructor-arg index="1" value="Will"></constructor-arg>
+<constructor-arg index="2" value="50"></constructor-arg>
+<constructor-arg index="3" value="12/08/1962"></constructor-arg>
+</bean>
+<bean class="cine.entidad.Director" id="director2" scope="prototype">
+<constructor-arg index="0" value="3"></constructor-arg>
+<constructor-arg index="1" value="Longueras"></constructor-arg>
+<constructor-arg index="2" value="55"></constructor-arg>
+<constructor-arg index="3" value="12/08/1952"></constructor-arg>
+</bean>
+
+<bean class="cine.entidad.Peliculas" id="pelicula" scope="prototype">
+<constructor-arg index="0" value="2"></constructor-arg>
+<constructor-arg index="1" ref="director2"></constructor-arg>
+<constructor-arg index="2" ref="actor1"></constructor-arg>
+</bean>
+
+<!-- <bean id="Casita" class="entidad.Casa">
+		<property name="direccion">
+			<bean class="entidad.Direccion">
+				<property name="tipoVia" value="Calle"></property>
+				<property name="calle" value="No libertad"></property>
+				<property name="cp" value="28333"></property>
+				<property name="numero" value="23"></property>
+			</bean>
+		</property>
+		<property name="habitaciones">
+			<bean class="java.util.ArrayList">
+				<constructor-arg>
+					<list>
+						<ref bean="banio" />
+						<ref bean="cocina" />
+						<ref bean="dormitorio1" />
+						<ref bean="dormitorio2" />
+					</list>
+				</constructor-arg>
+			</bean>
+		</property>
+
+	</bean> -->
+</beans>

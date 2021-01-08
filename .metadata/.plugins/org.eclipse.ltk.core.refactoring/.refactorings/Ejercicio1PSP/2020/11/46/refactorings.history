@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;CasaSpring/src/casa&apos;&#x0D;&#x0A;- Original project: &apos;Ejercicio1PSP&apos;&#x0D;&#x0A;- Destination element: &apos;CasaSpring/src/casa&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     ClaseMain.java&#x0D;&#x0A;     Direccion.java&#x0D;&#x0A;     Casa.java&#x0D;&#x0A;     Habitacion.java&#x0D;&#x0A;     Persona.java" description="Copy compilation units" destination="=CasaSpring/src=/optional=/true=/=/maven.pomderived=/true=/&lt;casa" element1="/src&lt;{ClaseMain.java" element2="/src&lt;{Direccion.java" element3="/src&lt;{Casa.java" element4="/src&lt;{Habitacion.java" element5="/src&lt;{Persona.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1605283054782" units="5" version="1.0"/>
+</session>

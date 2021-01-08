@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean class="deporte.entidad.Jugador" id="jugador1">
+<property name="nombre" value="Antonio"></property>
+<property name="dorsal" value="1"></property>
+</bean>
+
+<bean class="deporte.entidad.Jugador" id="jugador2">
+<property name="nombre" value="Juan"></property>
+<property name="dorsal" value="2"></property>
+</bean>
+
+
+<bean id="arrayjugadores" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="jugador1"/>
+				<ref bean="jugador2"/>
+				<bean class="deporte.entidad.Jugador" id="jugador3">
+					<property name="nombre" value="Maria"></property>
+					<property name="dorsal" value="2"></property>
+				</bean>
+			</list>
+		</constructor-arg>
+	
+</bean>
+
+
+</beans>

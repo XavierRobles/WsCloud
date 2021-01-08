@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<!-- auto elazado Es una caracteristica de spring la cual podemos hacer 
+		que el contexto inyecte dependencia de los objetos de forma automatica sin 
+		tener que decirlo explicitamente Existe dos tipos principales de autowired, 
+		uno seria 1) Autowire por tipo si decimos aun bean que queremos hacer un 
+		autoenlazado por tipo, entoces el contexto de spring buscara un objetp del 
+		tipo que necesite y los enlazara automaticamente Si hay mas de dos del mismo 
+		tipo hay que hacer una inyeccion por tipo y entoces buscara un id de la misma 
+		propiedad que intenta inyectar 2) -->
+
+	<bean id="salario" class="entidad.Salario">
+		<property name="base" value="1500"></property>
+	</bean>
+	<bean id="direccion2" class="entidad.Direccion">
+		<property name="ciudad" value="Madrid"></property>
+
+	</bean>
+
+	<bean id="direccion" class="entidad.Direccion">
+		<property name="ciudad" value="Barcelona"></property>
+
+	</bean>
+
+
+	<bean id="persona" class="entidad.Persona" autowire="byName">
+		<property name="nombre" value="Bud Spencer"></property>
+
+	</bean>
+
+
+</beans>
