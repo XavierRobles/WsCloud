@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th=http://thymeleaf.org>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<div style="text-align: center"><h1>Inicio de sesion correcto</h1> 
+<hr><h1>---------------Sin geter------------------</h1>
+<h2 th:text ="${nombre.username}"></h2><br>
+<hr>
+<h1>-------------objeto entero--------------------</h1>
+
+<h1 th:text ="${nombre}"></h1>
+<hr>
+<h1>--------------lista-------------------</h1>
+
+
+<!-- Para poner un array  valor eqwuivale a la i del for-->
+<h3 th:each="valor: ${lista}">
+
+<span th:text="${valor}"></span>
+</h3>
+<hr>
+<h1>--------------Fecha-------------------</h1>
+
+<h3 th:text="${fecha}"></h3>
+<hr>
+</div>
+</body>
+</html>

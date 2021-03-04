@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="05_SpringJPADataRelaciones"/>
 <aop-project name="CasaSpring"/>
 <aop-project name="EjercicioTipoExamen"/>
 <aop-project name="03SpringBoot"/>
@@ -8,9 +9,15 @@
 <aop-project name="Ejercicio2"/>
 <aop-project name="01_FundamentosSpring"/>
 <aop-project name="CineRepasoSinHerencias"/>
+<aop-project name="06_MVC_Login"/>
 <aop-project name="03SpringBootCliente-1"/>
+<aop-project name="07_SHA_Usuario_Contraseña"/>
 <aop-project name="03SpringBootCliente"/>
 <aop-project name="02_Fundamentosanotaciones"/>
+<aop-project name="04_SpringJPAData"/>
+<aop-project name="04_JPA_Data_Sha1"/>
 <aop-project name="Ejercicio1"/>
+<aop-project name="06_MVCLogin"/>
 <aop-project name="CineRepaso"/>
+<aop-project name="04_JPA_Data_Sha1-1"/>
 </aop-reference-model>
